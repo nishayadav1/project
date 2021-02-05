@@ -1,0 +1,45 @@
+{
+  "name": "project-apptunix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "export NODE_ENV=dev && pm2 start server.js --name DEV_PROJECT_APPTUNIX",
+    "live": "export NODE_ENV=live && pm2 start server.js --name LIVE_PROJECT_APPTUNIX"
+  },
+  "author": "Syed Asad",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.3.0",
+    "agenda": "^3.1.0",
+    "aws-sdk": "^2.768.0",
+    "bluebird": "^3.7.2",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "event-stream": "^4.0.1",
+    "express": "^4.17.1",
+    "fcm-node": "^1.5.2",
+    "flat": "^5.0.2",
+    "flatten": "^1.0.3",
+    "handlebars": "^4.7.6",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mailgun-js": "^0.22.0",
+    "md5": "^2.3.0",
+    "moment": "^2.29.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.10.6",
+    "mongoose-auto-increment": "^5.0.1",
+    "multer": "^1.4.2",
+    "request": "^2.88.2",
+    "sendotp": "^1.2.9",
+    "socket.io": "^2.3.0",
+    "twilio": "^3.49.3",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  }
+}
